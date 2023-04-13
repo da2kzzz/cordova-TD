@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+      
+       <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; 
+       media-src *; img-src 'self' data: content:;">-->
+       
+        <title>Hotel</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+       
+ <link rel="stylesheet" href="themes/mytheme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	
+<!-- Include jQuery Mobile stylesheets -->
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+   
+
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+        
+    </head>
+     <body>
+     <!-- première page -->
+       <div data-role="page" id="pindex">  
+ <div data-role="header">   
+ <h1>Camden Hotel</h1>      
+ </div>     
+ <div data-role="main" class="ui-content">       
+ <p>
+ 
+ Welcome to the Camden Hotel. We are a luxury hotel       
+ specializing in catering to the rich and overly            
+ privileged. You will find our accommodations both    
+ flattering to your ego, as well as damaging to your  
+ wallet. Enjoy our complimentary wi-fi access, as well as        
+ caviar baths while sleeping in beds with gold thread.     
+ </p>        
+ <ul data-role="listview" data-inset="true">       
+ <li><a href="find.html#pfind">Find Us</a></li>       
+ <li><a href="#prooms">Our Rooms</a></li>     
+ <li><a href="#pfac">Facilities</a></li> 
+   <li><a href="#pcontact">Contact Us</a></li>     
+   <li><a href="#pbook">Booking</a></li>            
+ <li><a href="#" id="nbs">Non-Mobile Site</a></li>       
+ </ul>      </div>      
+ <div data-role="footer" data-position="fixed">     
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div> 
+ </div>
+ 
+ 
+ <!-- page find -->
+ 
+ <div data-role="page" id="pfind">     
+ <div data-role="header">  
+  <a href="#pindex" class="ui-btn ui-corner-all 
+  ui-shadow ui-icon-home ui-btn-icon-left">Home</a>  
+ <h1>Find Us</h1>     
+  <a href="loc.html" target="_blank" 
+  class="ui-btn ui-corner-all ui-shadow 
+  ui-icon-location ui-btn-icon-left">Location</a>  
+ </div>     
+ <div role="main" class="ui-content">    
+ <p>          The Camden Hotel is located in beautiful downtown            Lafayette, LA. Home of the Ragin Cajuns, good food, good        
+ music, and all around good times, the Camden Hotel is            smack dab in the middle of one of the most interesting          
+ cities in America!        </p>        <p>          400 Kaliste Saloom<br/>          Lafayette, LA<br/>    
+ 70508        </p>        <p>          
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.8695423743334!2d-92.0193278848816!3d30.183720381831805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86249d1b4fe4f3a3%3A0xfdcd85b242b0f8c!2s400+Kaliste+Saloom+Rd%2C+Lafayette%2C+LA+70508%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1520431729243" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+ <div data-role="footer">    
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div>    
+ </div>
+ </div>
+ 
+ <!-- page contact -->
+ 
+ <div data-role="page" id="pcontact">      
+ <div data-role="header">   
+  <a href="#pindex" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>     
+ <h1>Contact Us</h1>     
+   </div>     
+ <div role="main" class="ui-content">        
+ <p>          <b>Phone:</b> <a href="tel:555-555-5555">             555-555-5555</a><br/>
+ <b>Email:</b> <a href="mailto:people@camdenhotel.com">             people@camdenhotel.fake</a>       
+ </p>      
+ </div>      
+ <div data-role="footer">        <h4>&copy; Camden Hotel 2018</h4>     
+  </div>   
+   </div>
+        
+ <!-- pages rooms -->
+       
+<div data-role="page" id="prooms">     
+ <div data-role="header">    
+  <a href="#pindex" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a> 
+   <h1>Our Rooms</h1>   
+    
+    </div>      
+   <div role="main" class="ui-content">       
+    <p>          Select a room below to see a picture.        </p>        
+    <ul data-role="listview" data-inset="true">         
+     <li><a href="#proomsimple">Simple Elegance</a></li>       
+        <li><a href="#proomgold">Gold Standard</a></li>       
+   <li><a href="#proomes">Emperor Suite</a></li>       
+    </ul>     
+     </div>      
+   <div data-role="footer">       
+    <h4>&copy; Camden Hotel 2018</h4>      
+    </div>   
+   </div>       
+       
+ 
+ <!-- page room Empror suite -->
+       
+ <div data-role="page" data-fullscreen="true" id="proomes">     
+ <div data-role="header" data-position="fixed">       
+  <a href="#pindex" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>  
+<h1>Emperor Suite</h1>     
+ </div>     
+ <div data-role="main" class="ui-content">        
+ <img src="img/room2.jpg" />     
+ </div>      
+ <div data-role="footer" data-position="fixed">    
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#proomsimple">Room Simple</a></li>
+      <li><a href="#proomgold">Room Gold</a></li>  
+    </ul>
+  </div>    
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div>    
+ </div>
+ 
+
+ <!-- page room simple -->
+       
+ <div data-role="page" data-fullscreen="true" id="proomsimple">     
+ <div data-role="header" data-position="fixed">       
+  <a href="#pindex" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>  
+<h1>Simple Elegance</h1>     
+ </div>     
+ <div data-role="main" class="ui-content">      
+ <img src="img/room2.jpg" />     
+ </div>      
+ <div data-role="footer" data-position="fixed">    
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#proomes">Room Empror Suite</a></li>
+      <li><a href="#proomgold">Room Gold</a></li>
+      
+    </ul>
+  </div>    
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div>    
+ </div>
+
+ <!-- page room gold -->
+       
+ <div data-role="page" data-fullscreen="true" id="proomgold">     
+ <div data-role="header" data-position="fixed">    
+  <a href="#pindex" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>     
+<h1>Gold Standard</h1>     
+ </div>     
+ <div data-role="main" class="ui-content">      
+ <img src="img/room2.jpg" />     
+ </div>      
+ <div data-role="footer" data-position="fixed">    
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#proomsimple">Room Simple</a></li>
+      <li><a href="#proomes">Room Empror Suite</a></li>
+      
+    </ul>
+  </div>    
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div>    
+ </div>
+
+ <!-- pages facilities -->
+       
+<div data-role="page" id="pfac">     
+ <div data-role="header">  
+  <a href="#pindex" class="ui-btn ui-corner-all 
+  ui-shadow ui-icon-home ui-btn-icon-left">Home</a>   
+   <h1>Facilities</h1>    
+    </div>      
+   <div role="main" class="ui-content">       
+    <p>          Hotel facilities : select to see the description.        </p>        
+    <ul data-role="listview" data-inset="true">         
+     <li><a href="#fr">Fitness room</a></li>        
+        <li><a href="#ihp">Indoor heated pool</a></li>       
+   <li><a href="#rest">Restaurant and bar</a></li>       
+    </ul>     
+     </div>  
+     <div data-role="footer" data-position="fixed">        
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div>    
+ </div>
+     
+     
+      <!-- page fitness -->    
+ <div data-role="page" data-fullscreen="false" id="fr">     
+ <div data-role="header" data-position="fixed">   
+  <a href="#pindex" class="ui-btn ui-corner-all ui-shadow 
+  ui-icon-home ui-btn-icon-left">Home</a>      
+<h1>Fitness room</h1>     
+ </div>     
+ <div data-role="main" class="ui-content">      
+ <img src="img/fitness.jpg" />     
+ </div>     
+ <div data-role="footer" data-position="fixed">        
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div>    
+ </div>   
+ 
+   
+ <!--- page Booking-->
+ <div data-role="page" id="pbook">     
+ <div data-role="header">  
+  <a href="#pindex" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>  
+ <h1>Booking</h1>  
+  <a href="#pviewbook"   class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-grid">View bookings</a>   
+ </div>     
+ <div role="main" class="ui-content">    
+ <p>          Please fill the form and send the booking<p>          
+
+
+
+  <form  id="target">
+    <div class="ui-field-contain" action="">
+    <label for="daarr">Check-in date:</label>
+<input name ="darr" type="date" data-role-btn="false" id="d1"> 
+<label for="ddep">Check-in out:</label>
+<input name="ddep" type="date" data-role-btn="date" id="d2">    
+    <label for="select1">Adults:</label>
+    <select name="select1" id="nbad">
+        <option value="1">1 adult</option>
+        <option value="2">2 adults</option>
+        <option value="3">3 adults</option>
+        <option value="4">4 adults</option>
+    </select>
+    
+     <label for="select2">Children:</label>
+    <select name="select2" id="nbchi">
+         <option value="0">No child</option>
+        <option value="1">1 child</option>
+        <option value="2">2 childs</option>
+        <option value="3">3 childs</option>
+    </select>
+    <br/>
+    <input type="submit" class="ui-btn ui-corner-all" value="valider">
+    </div>
+    </form>  
+
+</div>
+
+
+
+
+ <div data-role="footer" data-position="fixed">    
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div>    
+ </div>
+     
+         <!-- page view books -->    
+ <div data-role="page" data-fullscreen="false" id="pviewbook">     
+ <div data-role="header" data-position="fixed">   
+  <a href="#pindex" class="ui-btn ui-corner-all ui-shadow 
+  ui-icon-home ui-btn-icon-left">Home</a>      
+<h1>My bookings</h1>     
+ </div>     
+ <div data-role="main" class="ui-containt">        
+ 
+ <div id="divtab"></div>
+    
+ </div>     
+ <div data-role="footer" data-position="fixed">        
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div>   
+ </div> 
+ 
+  
+
+        
+        <script type="text/javascript" src="cordova.js"></script>
+         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAsfnP_TT4T-jpIZsebDou5zPnvhcoJiD0&callback=initMap"></script>
+         <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
+

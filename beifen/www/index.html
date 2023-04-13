@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+       <meta charset="utf-8">
+       <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; 
+       media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/B.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+        <title>Shop</title>
+    </head>
+<body>
+<!-- première page -->
+<div data-role="page" id="pindex">
+    <div data-role="header">
+        <h1>Belfort Shopping</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+        <p>
+            <img src="img/belfort.png" style="border:1px solid #eee;width:360px;height:250px;">
+
+        </p>
+        <ul data-role="listview" data-inset="true">
+            <li><a href="find.html">Maps</a></li>
+            <!--<li><a href="#psearch">Search</a></li>-->
+            <li><a href="#padd">Add a new place</a></li>
+            <li><a href="#plocalrecord">View local records</a></li>
+            <li><a href="#pdel">Delete Local Records</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; Shop in Belfort</h4>
+    </div>
+ </div>
+
+
+
+
+ <!-- page add -->
+ 
+ <div data-role="page" id="padd">
+     <div data-role="header">
+         <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+         <h1>Add Records</h1>
+     </div>
+
+     <div role="main" class="ui-content">
+         <p>          Add What You Found        </p>
+         <ul data-role="listview" data-inset="true">
+             Name:
+             <input id="name" placeholder="Enter Name" >
+             Category:
+             <input id="categories" placeholder="Transport, Market, Medcine, Government.etc" >
+             Tags:
+             <input id="tag" placeholder="Bus, Chips, Printer, iPhone.etc" >
+             Location:
+             <input id="location" placeholder="Enter Complete Adress">
+             <button id="store">Store</button>
+             <button id="share">Upload/Share</button>
+         </ul>
+     </div>
+
+     <div data-role="footer" data-position="fixed">
+         <h4>&copy; Shop in Belfort</h4>
+     </div>
+ </div>
+        
+ <!-- pages search 
+     <div data-role="page" id="psearch">
+         <div data-role="header">
+             <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+             <h1>Search Page</h1>
+         </div>
+         <div role="main" class="ui-content">
+             <p>          What you want to find       </p>
+             
+                 <input type="text" id="username" >
+                 <input type="submit" data-inline="true" value="Search" id="submit">
+                 <div id="resultat">
+        
+                 </div>
+         </div>
+         <div data-role="footer" data-position="fixed">
+             <h4>&copy; Shop in Belfort</h4>
+         </div>
+     </div>
+-->
+
+
+     <!-- pages records -->
+<div data-role="page" id="plocalrecord">
+    <div data-role="header">
+        <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <h1>Records</h1>
+
+    </div>
+    <div role="main" class="ui-content">
+        <p>          These are the local records.        </p>
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#popt">Optymo</a></li>
+            <li><a href="#pcora">Cora</a></li>
+            <li><a href="#pcaf">Caf</a></li>
+            <a href="#display" class="ui-btn">Display All Local Notes</a>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; Shop in Belfort</h4>
+    </div>
+</div>
+
+     <!-- page optymo -->
+
+     <div data-role="page" id="popt">
+         <div data-role="header">
+             <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+             <h1>Optymo</h1>
+         </div>
+         <div role="main" class="ui-content">
+             <p>          This is the Optymo.        </p>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7281.87797196068!2d6.843057298112756!3d47.63552262077823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4efe2d9f4feed748!2sOptymo!5e0!3m2!1szh-CN!2sfr!4v1609171505716!5m2!1szh-CN!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+             <p> Category: Transport.        </p>
+             <p> Tags: Bus Ticket Card.        </p>
+             <p> Location: 13 Rue de Madrid, 90000 Belfort.        </p>
+         </div>
+         <div data-role="footer" data-position="fixed">
+             <h4>&copy; Shop in Belfort</h4>
+         </div>
+     </div>
+
+     <!-- page cora -->
+
+     <div data-role="page" id="pcora">
+         <div data-role="header">
+             <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+             <h1>Cora</h1>
+         </div>
+         <div role="main" class="ui-content">
+             <p>          This is the Cora Supermarket.        </p>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21519.4724534772!2d6.848365190954218!3d47.60797190447632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99dfb0bc838d2201!2sCora!5e0!3m2!1szh-CN!2sfr!4v1609172608586!5m2!1szh-CN!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+             <p> Category: Market.        </p>
+             <p> Tags: Deil NoPrinter Cafe.        </p>
+             <p> Location: 15 Route de Montbéliard, 90400 Andelnans.        </p>
+         </div>
+         <div data-role="footer" data-position="fixed">
+             <h4>&copy; Shop in Belfort</h4>
+         </div>
+     </div>
+
+     <!-- page caf -->
+
+     <div data-role="page" id="pcaf">
+         <div data-role="header">
+             <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+             <h1>Caf</h1>
+         </div>
+         <div role="main" class="ui-content">
+             <p>          This is the Caf Office.        </p>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21511.734941993815!2d6.856347444982539!3d47.62677530450629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x58cff80f2ecafe40!2sCaf%20of%20Belfort!5e0!3m2!1szh-CN!2sfr!4v1609172870179!5m2!1szh-CN!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+             <p> Category: Government.        </p>
+             <p> Tags: Caf MedicalInsurance.        </p>
+             <p> Location: 12 Rue du Général Strolz, 90000 Belfort.        </p>
+         </div>
+         <div data-role="footer" data-position="fixed">
+             <h4>&copy; Shop in Belfort</h4>
+         </div>
+     </div>
+
+    <!-- page all -->
+    <div data-role="page" id="display">
+        <div data-role="header">
+            <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+            <h1>Local Records</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+            <ul id="data-list">
+            <!-- affichage des notes -->
+            </ul>
+            </div>
+      </div>
+     
+     <div data-role="page" id="single-note">
+        <div data-role="header">
+            <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+            <h1 id="note-title"> <!-- affichage du nom de la note --></h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+            Category :<p id="note-cate"> <!-- affichage du texte de la note --></p>
+            Tags :<p id="note-tgs"> <!-- affichage du texte de la note --></p>
+            Location :<p id="note-loc"> <!-- affichage de la date de la note --></p>
+            <a href="#" class="ui-btn" data-rel="back" > Return</a>
+          
+            </div>
+      </div>
+
+     <!-- page delete -->
+
+     <div data-role="page" id="pdel">
+         <div data-role="header">
+             <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+             <h1>Delete Local Records</h1>
+         </div>
+         <div role="main" class="ui-content">
+             <p>          Click the button and delete all local records.        </p>
+             <button id="dall">Delete</button>
+         </div>
+         <div data-role="footer" data-position="fixed">
+             <h4>&copy; Shop in Belfort</h4>
+         </div>
+     </div>
+     
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/SQLitePlugin.js"></script>
+
+</body>
+</html>
+

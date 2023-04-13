@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>Note</title>
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+    </head>
+    <body>
+
+      <div data-role="page" id="home">
+          <div data-role="header">
+              <h1>Home</h1>
+          </div>
+
+          <div data-role="main" class="ui-content">
+              <p>
+                  <a href="#add" class="ui-btn">Add Note</a>
+                  <a href="#display" class="ui-btn">Display Notes</a>
+                  <button  id="delnote">Delete note table</button>
+              </p>
+          </div>
+      </div>
+
+      <div data-role="page" id="add">
+      	<div data-role="header">
+          	<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+          	<h1>ADD</h1>
+        	</div>
+
+        	<div data-role="main" class="ui-content">
+          	<input type="text" id="name" placeholder="Enter Name" />
+          	<textarea id="note-text" placeholder="Place text here"></textarea>
+          	<input type="date" data-role-btn="false"  id="dnote"> 
+          	<button  id="adb">Add Note</button>
+        	</div>
+      </div>
+
+      <div data-role="page" id="display">
+      	<div data-role="header">
+          	<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+          	<h1>NOTES</h1>
+        	</div>
+
+        	<div data-role="main" class="ui-content">
+          	<ul id="data-list">
+          	<!-- affichage des notes -->
+          	</ul>
+        	</div>
+      </div>
+
+      <div data-role="page" id="single-note">
+      	<div data-role="header">
+          	<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+          	<h1 id="note-title"> <!-- affichage du nom de la note --></h1>
+        	</div>
+
+        	<div data-role="main" class="ui-content">
+          	<p id="note-data"> <!-- affichage du texte de la note --></p>
+          
+          	Date :<p id="note-date"> <!-- affichage de la date de la note --></p>
+          	<a href="#" class="ui-btn" data-rel="back" > Return</a>
+          
+        	</div>
+      </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+         <script type="text/javascript" src="js/index.js"></script>
+        
+    </body>
+</html>

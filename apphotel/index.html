@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+      
+       <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; 
+       media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <title>Hotel</title>
+    </head>
+     <body>
+     <!-- première page -->
+       <div data-role="page" id="pindex">  
+ <div data-role="header">   
+ <h1>Camden Hotel</h1>      
+ </div>     
+ <div data-role="main" class="ui-content">       
+ <p>
+ 
+ Welcome to the Camden Hotel. We are a luxury hotel       
+ specializing in catering to the rich and overly            
+ privileged. You will find our accommodations both    
+ flattering to your ego, as well as damaging to your  
+ wallet. Enjoy our complimentary wi-fi access, as well as        
+ caviar baths while sleeping in beds with gold thread.     
+ </p>        
+ <ul data-role="listview" data-inset="true">       
+ <li><a href="find.html">Find Us</a></li>       
+ <li><a href="#prooms">Our Rooms</a></li>     
+ <li><a href="#pcontact">Contact Us</a></li>       
+ <li><a href="" id="l4">Non-Mobile Site</a></li>       
+ </ul>      </div>      
+ <div data-role="footer">     
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div> 
+ </div>
+ 
+ 
+
+ <!-- page contact -->
+ 
+ <div data-role="page" id="pcontact">      
+ <div data-role="header">       
+ <h1>Contact Us</h1>     
+   </div>     
+ <div role="main" class="ui-content">        
+ <p>          <b>Phone:</b> <a href="tel:555-555-5555">             555-555-5555</a><br/>
+ <b>Email:</b> <a href="mailto:people@camdenhotel.com">             people@camdenhotel.fake</a>       
+ </p>      
+ </div>      
+ <div data-role="footer">        <h4>&copy; Camden Hotel 2018</h4>     
+  </div>   
+   </div>
+        
+ <!-- pages rooms -->
+       
+<div data-role="page" id="prooms">     
+ <div data-role="header">    
+   <h1>Our Rooms</h1>   
+    
+    </div>      
+   <div role="main" class="ui-content">       
+    <p>          Select a room below to see a picture.        </p>        
+    <ul data-role="listview" data-inset="true">         
+     <li><a href="#proompoor">Simple Elegance</a></li>       
+        <li><a href="#proommedium">Gold Standard</a></li>       
+   <li><a href="#proomhigh">Emperor Suite</a></li>       
+    </ul>     
+     </div>      
+   <div data-role="footer">       
+    <h4>&copy; Camden Hotel 2018</h4>      
+    </div>   
+   </div>       
+       
+ 
+ <!-- page room hight -->
+       
+ <div data-role="page" data-fullscreen="true" id="proomhigh">     
+ <div data-role="header" data-position="fixed">        
+<h1>Emperor Suite</h1>     
+ </div>     
+ <div data-role="content">        
+ <img src="img/room2.jpg" />     
+ </div>      
+ <div data-role="footer" data-position="fixed">        
+ <h4>&copy; Camden Hotel 2018</h4>      
+ </div>    
+ </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
+

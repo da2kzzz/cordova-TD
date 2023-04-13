@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>    
+<head>        
+<meta charset="utf-8" />       
+ <meta name="format-detection" content="telephone=no" />        
+ <meta name="msapplication-tap-highlight" content="no" />       
+ <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width,
+ height=device-height,        target-densitydpi=device-dpi" />
+ 
+
+<!-- Include jQuery Mobile stylesheets -->
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
+ <title>You are here</title>  
+ 
+ 
+   <link rel="stylesheet" href="themes/mytheme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	
+	 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+ </head>   
+ <body>
+ <div data-role="page" id="page1" >
+<div data-role="header">
+    <h1>My position</h1>
+  
+  
+    </div>
+<a href="" onclick="getLocation()" class="ui-btn ui-icon-search ui-btn-icon-right" >Locate Myself</a>
+  <div data-role="main" class="ui-content">
+     <div id="map" style="height:700px;"><!-- Show the Map here  --> </div>    
+  </div>  
+</div> 
+
+<script type="text/javascript" src="cordova.js">
+ </script>   
+ <script type="text/javascript" src="js/index.js"></script>
+ 
+ <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key= AIzaSyCNdGIcj8OphhlQKR508HSNLnMFIXKnE2Y&sensor=true">
+   
+ <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key= AIzaSyAsfnP_TT4T-jpIZsebDou5zPnvhcoJiD0&sensor=true">
+ <!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAkgAGiTmz1ddFI45A-k-tRywzJ6aJ4Vuc&sensor=true">-->
+ </script>
+ 
+ </body>
+ </html>
